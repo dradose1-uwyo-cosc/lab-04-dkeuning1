@@ -100,13 +100,19 @@ min_temps = [
 # Output the results of both calculations.
 
 max_temps_total = 0
-
+min_temps_total = 0
 
 for item in max_temps:
     max_temps_total = max_temps_total + item
 
+for item in min_temps:
+    min_temps_total = min_temps_total + item
+
 max_temps_mean = max_temps_total/len(max_temps)
+min_temps_mean = min_temps_total/len(min_temps)
+
 print(max_temps_mean)
+print(min_temps_mean)
 
 
 # For the next part, determine the highest and lowest recorded temperatures.
