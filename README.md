@@ -5,5 +5,3 @@
 * Worked with Braeden Kirby
 ## Project Quirks/ Things that don't work
 * example
-* example
-* example

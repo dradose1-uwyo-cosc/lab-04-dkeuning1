@@ -105,17 +105,30 @@ min_temps_total = 0
 for item in max_temps:
     max_temps_total = max_temps_total + item
 
+
 for item in min_temps:
     min_temps_total = min_temps_total + item
 
 max_temps_mean = max_temps_total/len(max_temps)
 min_temps_mean = min_temps_total/len(min_temps)
 
-print(max_temps_mean)
-print(min_temps_mean)
+print(f"Max Temps Average: {max_temps_mean}")
+print(f"Min Temps Average: {min_temps_mean}")
 
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+max_temps_highest = 0
+min_temps_lowest = 0
 
+for item in max_temps:
+    if item > max_temps_highest:
+        max_temps_highest = item
+
+for item in min_temps:
+    if item < min_temps_lowest:
+        min_temps_lowest = item    
+        
+print(f"Maximum Temp: {max_temps_highest}")
+print(f"Minimum Temp: {min_temps_lowest}")
